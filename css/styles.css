@@ -17,10 +17,24 @@ ol {
 img {
   display: block;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 .container {
-  width: 1158px;
-  margin: 0 auto;
-  padding: 0 15px;
+  width: 1168px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 a {
   text-decoration: none;
@@ -36,6 +50,10 @@ body {
   font-family: "Roboto", sans-serif;
   color: #434455;
   background-color: #ffffff;
+}
+.page-header-container {
+  display: flex;
+  justify-content: space-between;
 }
 .page-header {
   border-bottom: 1px solid #e7e9fc;
@@ -162,7 +180,7 @@ body {
 .team-members-item {
   background: #fff;
   width: calc((100% - 72px) / 4);
-  border-radius: 0px 0px 4px;
+  border-radius: 0px 0px 4px 4px;
 }
 .team-members {
   color: #2e2f42;
@@ -210,7 +228,7 @@ body {
 .first-item {
   width: calc((100% - 48px) / 3);
 }
-.container-bank {
+.container-items {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
